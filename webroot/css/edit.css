@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+    background: linear-gradient(to bottom, #6b8d6d, #849cb3);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main Container */
+.edit-container {
+    width: 80%;
+    max-width: 600px;
+    background: white;
+    padding: 25px;
+    box-shadow: 0 6px 12px rgba(20, 119, 114, 0.3);
+    border-radius: 12px;
+}
+
+/* Title */
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Form Section */
+.edit-form {
+    width: 100%;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+/* Form Inputs */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* General Styling for the Edit Page */
+.edit-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.edit-form input,
+.edit-form select,
+.edit-form textarea {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+.edit-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Button Styling */
+.btn-submit {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #218838;
+}
+
+/* Delete Button Styling */
+.btn-delete {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+}

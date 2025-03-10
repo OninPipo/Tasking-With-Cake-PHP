@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+    background: linear-gradient(to bottom, rgb(174, 62, 211), rgb(76, 98, 199));
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Task Sections Container */
+.task-sections {
+    display: flex;
+    justify-content: space-between; /* Space between the containers */
+    align-items: flex-start;
+    width: 100%;
+    gap: 20px;
+    padding: 0 20px;
+    overflow-x: auto; /* Allows horizontal scrolling if needed */
+}
+
+/* Task Container */
+.task-container {
+    flex: 0 0 auto;
+    min-width: 300px;
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background: #f5f5f5;
+    text-align: left;
+    position: relative;
+    margin-bottom: 20px; /* Adding space between containers */
+}
+
+/* Section Header */
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Plus Button */
+.add-task-btn {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: grey;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.add-task-btn:hover {
+    color: #505050;
+}
+
+/* Task Header Title */
+.task-header h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+/* Task Items */
+.task-item {
+    position: relative;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px; /* Increased space between task items */
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Task Name */
+.task-name {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Label Styles */
+.task-item strong {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Task Content */
+.task-content {
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+/* Task Dropdown */
+.task-dropdown {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.dropdown-toggle {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    background: white;
+    min-width: 140px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 100;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.dropdown-item:hover {
+    background: #f0f0f0;
+}
+
+/* Keep dropdown open on hover */
+.task-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Section Colors */
+.pending { border-top: 5px solid #dc3545; }
+.ongoing { border-top: 5px solid #ffc107; }
+.completed { border-top: 5px solid #28a745; }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .task-sections {
+        flex-direction: column;
+        align-items: center;
+    }
+}

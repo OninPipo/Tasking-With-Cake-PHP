@@ -1,0 +1,127 @@
+body {
+    background: linear-gradient(to bottom, #6b8d6d, #849cb3);
+    font-family: Arial, sans-serif;
+    
+    height: 100vh;
+    margin: 0;
+}
+ 
+
+/* General Styles */
+.task-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.9); /* Subtle transparency for better blending */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(5px);
+    transition: 0.3s ease-in-out;
+}
+
+.task-container:hover {
+    transform: translateY(-3px); /* Slight hover effect for depth */
+}
+
+/* Task Title */
+h3 {
+    text-align: center;
+    font-size: 26px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensures buttons don’t break on small screens */
+    margin-bottom: 20px;
+}
+
+.action-buttons .btn {
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: 0.2s ease-in-out;
+    border: none;
+}
+
+/* Button Colors */
+.btn-primary {
+    background: #007bff;
+    color: white;
+}
+
+.btn-info {
+    background: #17a2b8;
+    color: white;
+}
+
+.btn-danger {
+    background: #dc3545;
+    color: white;
+}
+
+.btn-success {
+    background: #28a745;
+    color: white;
+}
+
+/* Button Hover Effects */
+.btn:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+/* Task Details Table */
+.task-details {
+    padding: 15px;
+    border-radius: 8px;
+    background: rgba(240, 240, 240, 0.9);
+}
+
+.task-details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.task-details th,
+.task-details td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.task-details th {
+    background: #343a40;
+    color: white;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .task-container {
+        max-width: 95%;
+        padding: 20px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .action-buttons .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+.content-container {
+    max-width: 100%; /* Adjust width so it doesn’t break layout */
+    margin: auto; /* Center it properly */
+}
+
